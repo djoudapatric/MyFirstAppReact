@@ -2,24 +2,27 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,TouchableOpacity, ScrollView } from 'react-native';
 import TopBar from './Components/TopBar';
 import HomeStat from './Components/HomeStat';
+import SearchBar from './Components/SearchBar';
 import { AntDesign } from '@expo/vector-icons';
 import { Octicons } from '@expo/vector-icons';
-import { TextInput } from 'react-native-web';
+
 
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
+
+      {/*Start TopBar*/}
       <TopBar></TopBar>
+      {/*End TopBar*/}
+    
+      {/*Start HomeStat*/}
       <HomeStat></HomeStat>
+      {/*End HomeStat*/}
+     
       {/*Start Search bar*/}
-      <View style = {styles.searchBar}>
-        <TouchableOpacity style = {styles.iconSearch}>
-          <Octicons name="search" size={30} color="black" />
-        </TouchableOpacity>
-        <TextInput placeholder= "Search"/>
-      </View>
+      <SearchBar></SearchBar>
       {/*End Search bar*/}
 
       {/*Start scrollViews*/}
