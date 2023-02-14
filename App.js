@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,TouchableOpacity, ScrollView } from 'react-native';
 import TopBar from './Components/TopBar';
+import HomeStat from './Components/HomeStat';
 import { AntDesign } from '@expo/vector-icons';
 import { Octicons } from '@expo/vector-icons';
 import { TextInput } from 'react-native-web';
-import HomeStat from './Components/HomeStat';
+
 
 export default function App() {
   return (

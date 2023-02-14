@@ -2,6 +2,7 @@
 import React from "react";
 import { StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 
 
 export default function HomeStat(){
@@ -20,24 +21,11 @@ export default function HomeStat(){
                 <TouchableOpacity style={styles.icon}><Ionicons name="md-add-circle" size={32} color="black" /></TouchableOpacity>
             {/*End Stat*/}
         </View>
-    )
+    );
 }
 const styles = StyleSheet.create({
          homeStat: {
-          borderWidth:1,
-          borderColor:'red',
-          paddingHorizontal:24,
-          paddingVertical:16,
-          flexDirection:'row',
-          width:"100%",
-          justifyContent:'space-between',
+          backgroundColor:'red',
         },
-        topbarbutton: {
-          paddingHorizontal:8,
-          paddingVertical:10,
-          width: 55,
-          height: 60,
-          backgroundColor:'white',
-          borderRadius: 13
-    },
+        
 });
