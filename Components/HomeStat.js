@@ -13,19 +13,40 @@ export default function HomeStat(){
                 <View style = {styles.statValue}>
                     <Text style = {styles.textValue}>12</Text>
                     <View style = {styles.percentage}>
-                        <Text><AntDesign name="arrowup" size={16} color="green" />2%<Text> today</Text></Text>
+                        <Text ><AntDesign name="arrowup" size={20} color="green" />2%<Text> today</Text></Text>
                     </View>
                 </View>  
                     <Text style = {styles.statLabel}>Patient Appointments</Text>
             </View>
-                <TouchableOpacity style={styles.icon}><Ionicons name="md-add-circle" size={32} color="black" /></TouchableOpacity>
+                <TouchableOpacity style={styles.iconAdd}><Ionicons name="md-add-circle" size={70} color="black" /></TouchableOpacity>
             {/*End Stat*/}
         </View>
     );
 }
 const styles = StyleSheet.create({
-         homeStat: {
-          backgroundColor:'red',
+        homeStat: {
+            flexDirection:'row',
+            paddingVertical:20,
+            justifyContent:'space-between',
+            width:"100%",
         },
-        
+        textValue:{
+            fontSize:70,
+        },
+        percentage:{
+            alignItems:'center',
+            justifyContent:'center',
+            marginTop:50,
+            marginLeft:15,
+            height:30,
+            backgroundColor:'white',
+            borderRadius:15,     
+        },
+        statValue:{
+            flexDirection:'row',
+        },
+        iconAdd:{
+            width: 100,
+            paddingVertical:30,
+        }
 });

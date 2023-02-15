@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import TopBar from './Components/TopBar';
 import HomeStat from './Components/HomeStat';
 import SearchBar from './Components/SearchBar';
@@ -39,22 +39,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#f2f2f2',
     alignItems: 'left',
     justifyContent: 'top',
-  },
-  topbar: {
-    borderWidth:1,
-    borderColor:'red',
-    paddingHorizontal:24,
-    paddingVertical:16,
-    flexDirection:'row',
-    width:"100%",
-    justifyContent:'space-between',
-  },
-  topbarbutton: {
-    paddingHorizontal:8,
-    paddingVertical:10,
-    width: 55,
-    height: 60,
-    backgroundColor:'white',
-    borderRadius: 13
   },
 });

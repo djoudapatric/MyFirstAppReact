@@ -16,8 +16,7 @@ export default function TopBar(){
     }
     const styles = StyleSheet.create({
         topbar: {
-          borderWidth:1,
-          borderColor:'red',
+          border:1,
           paddingHorizontal:24,
           paddingVertical:16,
           flexDirection:'row',
@@ -33,3 +32,4 @@ export default function TopBar(){
           borderRadius: 13
         },
     });
+    

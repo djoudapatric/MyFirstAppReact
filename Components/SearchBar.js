@@ -1,6 +1,6 @@
 import React from "react";
 import {StyleSheet,View,TouchableOpacity} from 'react-native';
-import { TextInput } from 'react-native-web';
+import { TextInput } from "react-native";
 import { Octicons } from '@expo/vector-icons';
 
 
@@ -17,6 +17,16 @@ export default function SearchBar(){
 }
 const styles = StyleSheet.create({
     searchBar: {
-     backgroundColor:'blue',
+     borderWidth:1,
+     marginHorizontal:20,
+     paddingHorizontal:100,
+     paddingVertical:10,
+     flexDirection:'row',
+     backgroundColor:'white',
+     borderRadius:20,
+     
     },
+    iconSearch:{
+      
+    } 
 });
