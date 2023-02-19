@@ -29,6 +29,9 @@ export default function App() {
         <Cards></Cards> 
       </ScrollView>
       {/*End scrollViews*/}
+      <View style = {styles.statistique}>
+        
+      </View>
     </View>
   );
 }

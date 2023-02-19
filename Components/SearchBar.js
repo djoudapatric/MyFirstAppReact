@@ -10,23 +10,27 @@ export default function SearchBar(){
         <TouchableOpacity style = {styles.iconSearch}>
           <Octicons name="search" size={30} color="black" />
         </TouchableOpacity>
-        <TextInput placeholder= "Search"/>
+        <TextInput style = {styles.search} placeholder= "Search"/>
       </View>
     );
     
 }
 const styles = StyleSheet.create({
     searchBar: {
+     borderColor:'grey',
      borderWidth:1,
      marginHorizontal:20,
-     paddingHorizontal:100,
-     paddingVertical:10,
+     
      flexDirection:'row',
      backgroundColor:'white',
      borderRadius:20,
-     
     },
     iconSearch:{
       
-    } 
+    },
+    search:{
+      marginHorizontal:20,
+      borderRadius:20,
+      borderWidth:0,
+    }
 });
