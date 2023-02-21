@@ -4,13 +4,14 @@ import TopBar from './Components/TopBar';
 import HomeStat from './Components/HomeStat';
 import SearchBar from './Components/SearchBar';
 import Cards from './Components/Cards';
+import Statistique from './Components/Statistique';
 
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
+      <StatusBar style="" />
 
       {/*Start TopBar*/}
       <TopBar></TopBar>
@@ -25,13 +26,14 @@ export default function App() {
       {/*End Search bar*/}
 
       {/*Start scrollViews*/}
-      <ScrollView style = {styles.Cards} horizontal = {true}>
+      <ScrollView style = {styles.Cards} horizontal = {true} showsHorizontalScrollIndicator={false}>
         <Cards></Cards> 
       </ScrollView>
       {/*End scrollViews*/}
-      <View style = {styles.statistique}>
-        
-      </View>
+
+       {/*Start Statistique*/}
+      <Statistique></Statistique>
+      {/*End Statistique*/}
     </View>
   );
 }
@@ -42,5 +44,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#f2f2f2',
     alignItems: 'left',
     justifyContent: 'top',
+    marginTop:50
   },
 });

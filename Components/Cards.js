@@ -1,15 +1,21 @@
 import React from "react";
-import {StyleSheet,View,TouchableOpacity,Text} from 'react-native';
+import {StyleSheet,View,TouchableOpacity,Text,Image} from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { Octicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
+
 
 export default function Cards(){
     return(
+      
+        
       <View style = {styles.Cards}>
         <View style = {styles.card1}>
           <View style = {styles.cardHeader}>
             <TouchableOpacity style = {styles.iconWrite}>
-              <Octicons name="pencil" size={30} color="black" />
+            <MaterialCommunityIcons name="pencil-circle" size={40} color="white" />
             </TouchableOpacity>
             <Text style = {styles.cardName}>
                 Write Prescription
@@ -24,14 +30,14 @@ export default function Cards(){
                TEMPLATE
             </Text>
             <TouchableOpacity style = {styles.iconNext}>
-               <AntDesign name="arrowright" size={24} color="white" />
-            </TouchableOpacity>
+            <Ionicons name="arrow-forward-circle" size={50} color="black" />
+                        </TouchableOpacity>
           </View>
         </View> 
         <View style = {styles.card2}>
           <View style = {styles.cardHeader}>
             <TouchableOpacity style = {styles.iconWrite}>
-              <Octicons name="pencil" size={30} color="black" />
+              {/* <Image source={require('../assets/images/image_femme.jpg')}/> */}
             </TouchableOpacity>
             <Text style = {styles.cardName}>
                 Anna jonhson
@@ -62,8 +68,7 @@ const styles = StyleSheet.create({
     },
     card1: {
      backgroundColor:'green',
-     borderRadius:27,
-     marginBottom:300,
+     borderRadius:27,  
      marginTop:30,
      marginLeft:15,
      width:280,
@@ -73,23 +78,22 @@ const styles = StyleSheet.create({
       backgroundColor:'blue',
       borderRadius:27,
       marginTop:30,
-      marginBottom:300,
       marginLeft:15,
       width:280,
-      
-     },
+    },  
     iconWrite:{
-      marginBottom:70,
-      marginLeft:15,
-      
-      
+      width:48,
+      height:48,
+      borderRadius:50,
+      alignItems:'center',
+      justifyContent:'center',
     },
+    
     cardAction:{
       justifyContent:'space-between',
       flexDirection:'row',
-      paddingVertical:90,
+      paddingVertical:100,
       marginLeft:15,
-      marginBottom:50
     },
     cardName:{
       justifyContent:'center',
@@ -99,8 +103,7 @@ const styles = StyleSheet.create({
       marginLeft:15,
     },
     iconNext:{
-      backgroundColor:'black',
-      borderRadius:40,
-      width:40
+       paddingLeft:20,
+       
     }
 });

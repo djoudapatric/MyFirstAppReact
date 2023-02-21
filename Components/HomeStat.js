@@ -26,17 +26,17 @@ export default function HomeStat(){
 const styles = StyleSheet.create({
         homeStat: {
             flexDirection:'row',
-            paddingVertical:20,
             justifyContent:'space-between',
             width:"100%",
+            marginLeft:15,
         },
         textValue:{
-            fontSize:70,
+            fontSize:60,
         },
         percentage:{
             alignItems:'center',
             justifyContent:'center',
-            marginTop:50,
+            marginTop:30,
             marginLeft:15,
             height:30,
             backgroundColor:'white',

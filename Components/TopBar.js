@@ -7,8 +7,8 @@ export default function TopBar(){
     return (  
         <View style = {styles.topbar}>
                 {/*Start Top bar*/}
-                <TouchableOpacity style = {styles.topbarbutton}><FontAwesome5 name="toolbox" size={40} color="black" /></TouchableOpacity>
-                <TouchableOpacity style = {styles.topbarbutton}><MaterialCommunityIcons name="bell-ring" size={40} color="black" /></TouchableOpacity>
+                <TouchableOpacity style = {styles.topbarbutton}><FontAwesome5 name="toolbox" size={24} color="black" /></TouchableOpacity>
+                <TouchableOpacity style = {styles.topbarbutton}><MaterialCommunityIcons name="bell-ring" size={24} color="black" /></TouchableOpacity>
                 {/*End Top bar*/}
         </View>  
     )
@@ -26,10 +26,11 @@ export default function TopBar(){
         topbarbutton: {
           paddingHorizontal:8,
           paddingVertical:10,
-          width: 55,
-          height: 60,
+          width: 48,
+          height: 48,
           backgroundColor:'white',
-          borderRadius: 13
+          justifyContent:'center',
+          borderRadius: 50
         },
     });
     
